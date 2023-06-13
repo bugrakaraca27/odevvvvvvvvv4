@@ -1,162 +1,201 @@
 <html>
     <head>
     <title>Restaurant Menu</title>
-    <style>
-        body{
-            background-color: powderblue;
-        }
-        h1{
-        margin-top: 50px;
-        margin-bottom: 50px;
-        
-        font-size: 50px;
-        text-align: center;
-        text-decoration: underline;
-        color: white;
-        text-shadow: 2px 2px 4px #000000;
-        font-family: "Lucida Console", "Courier New" ,monospace;
-        letter-spacing: 5px;
-        text-transform: uppercase;
-        }
-        
-        #menu{
-            margin-left: 180px;
-            margin-right: 180px;
-            border: 10px solid;
-            border-color: white;
-            padding: 25px;
-            background-color: steelblue;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
 
-        }
-        
-        #menu_dis{
-            display: flex;
-            flex-wrap: wrap;
-            margin: 25px;
-            padding: 25px;
-            
-        }
-        
-        .menu_ic{
-           
-            margin: 30px;
-            padding: 50px;
+                <style>
+                    body{
+                        background-color: powderblue;
+                    }
+                    h1{
+                        margin-top: 20px;
+                        margin-bottom: 10px;
+                        font-size: 50px;
+                        text-align: center;
+                        text-decoration: underline;
+                        color: white;
+                        text-shadow: 2px 2px 4px #000000;
+                        font-family: "Lucida Console", "Courier New" ,monospace;
+                        letter-spacing: 5px;
+                        text-transform: uppercase;
+                    }
 
-        }
-        
-        img{
-            border: 5px solid blanchedalmond;
-            border-radius: 40%;
-        }
-        
-        img:hover{
-            border: 5px solid blueviolet;
-            
-        }
-        
-        a{
+                    h3{
+                        font-size: 30px;
+                        text-align: center;
+                        color: sienna;
+                        font-family: "Herr Von Muellerhoff",cursive;
+                        letter-spacing: 10px;
+                        text-shadow: 0 0 10px #FFFFFF, 0px 0px 12px rgba(49,0,89,0);
 
-            
-            
-        }
-       
-        
-        h2{
-            font-size: 15px;
-            font-family: "Lucida Console", "Courier New" ,monospace;
-            letter-spacing: 2px;
-            color: white;
-            text-transform: uppercase;
-            text-align: center;
-            margin-top:20px;
-            text-shadow: 2px 2px 4px #000000;
-            
-        }
-        
-        
-        
-        
-    </style>
-</head>
 
-<body>
-    
-    <h1>menu</h1>
 
-<div id="menu">
-    <div id="menu_dis">
-        
-        <div class="menu_ic">
-            
-            <div>
-                <a href="">
-                <img src="resim/yemek1.jpg" alt="sarma" width="150" height="200">
-                </a>
-                    <h2>Sarma</h2>
-            </div>
-        </div>
-        
-        <div class="menu_ic">
-            <div>
-                <img src="resim/yemek2.jpg" alt="manti" width="150" height="200">
-                    <h2>Manti</h2>
-            </div>
-        </div>
-        
-        <div class="menu_ic">
-            <div>
-                <img src="resim/yemek8.jpg" alt="kirazyaprak" width="150" height="200">
-                    <h2>Kiraz Yapragi</h2>
-            </div>
-        </div>
-        
-        <div class="menu_ic">
-            <div>
-                <img src="resim/yemek3.jpg" alt="adana" width="150" height="200">
-                    <h2>Adana Kebap</h2>
-            </div>
-        </div>
-        
-        <div class="menu_ic">
-            <div>
-                <img src="resim/yemek4.jpg" alt="kofte" width="150" height="200">
-                    <h2>Kofte</h2>
-            </div>
-        </div>
-        
-        <div class="menu_ic">
-            <div>
-                <img src="resim/yemek9.jpg" alt="tavuk" width="150" height="200">
-                    <h2>Tavuk Sis</h2>
-            </div>
-        </div>
-        
-        
-        <div class="menu_ic">
-            <div>
-                <img src="resim/yemek5.jpeg" alt="kola" width="150" height="200">
-                    <h2>Kola</h2>
-            </div>
-        </div>
-        
-        <div class="menu_ic">
-            <div>
-                <img src="resim/yemek6.jpg" alt="ayran" width="150" height="200">
-                    <h2>Ayran</h2>
-            </div>
-        </div>
-        
-        <div class="menu_ic">
-            <div>
-                <img src="resim/yemek7.jpg" alt="salgam" width="150" height="200">
-                    <h2>Salgam</h2>
-            </div>
-        </div>
-        
-        
-    </div>
-</div>
-    
-    
-</body>
-</html>
+                    }
+
+                    #menu{
+                        margin-left: 180px;
+                        margin-right: 180px;
+                        border: 10px solid;
+                        border-color: white;
+                        padding: 25px;
+                        background-color: steelblue;
+                        border-radius: 5px;
+                        margin-bottom: 50px;
+
+                    }
+
+                    #menu_dis{
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin: 25px;
+                        padding: 25px;
+
+                    }
+
+                    .menu_ic{
+
+                        margin: 30px;
+                        padding: 50px;
+
+                    }
+
+                    img{
+                        border: 5px solid blanchedalmond;
+                        border-radius: 5px;
+                        box-shadow: 0 10px 15px 5px rgba(0,0,0,0.4);
+                    }
+
+                    img:hover{
+                        border: 5px solid black;
+                        transition: 1s;
+                        opacity: 0.5;
+
+                    }
+
+                    h2{
+                        font-size: 15px;
+                        font-family: "Lucida Console", "Courier New" ,monospace;
+                        letter-spacing: 2px;
+                        color: white;
+                        text-transform: uppercase;
+                        text-align: center;
+                        margin-top:20px;
+                        text-shadow: 2px 2px 4px #000000;
+
+                    }
+
+                    footer{
+                        height: 16vh;
+                    }
+
+                    #ftr{
+                        position: absolute;
+                        background-color: #333;
+                        width: 100%;
+                        color: white;
+                        text-align: center;
+                        letter-spacing: 3px;
+                        opacity: 0.7;
+
+                    }
+
+                    *{
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                </style>
+                </head>
+
+                <body>
+                    <h1>menu</h1>
+                    <h3>afiyet olsun</h3>
+
+                <div id="menu">
+                    <div id="menu_dis">
+
+                        <div class="menu_ic">
+
+                            <div>
+                                <a href="sarma.html" target="_blank">
+                                    <img src="resim/yemek1.jpg" alt="sarma" width="150" height="200">
+                                </a>
+                                <h2>Sarma</h2>
+                            </div>
+                        </div>
+
+                        <div class="menu_ic">
+                            <div>
+                                <img src="resim/yemek2.jpg" alt="manti" width="150" height="200">
+                                    <h2>Manti</h2>
+                            </div>
+                        </div>
+
+                        <div class="menu_ic">
+                            <div>
+                                <img src="resim/yemek8.jpg" alt="kirazyaprak" width="150" height="200">
+                                    <h2>Kiraz Yapragi</h2>
+                            </div>
+                        </div>
+
+                        <div class="menu_ic">
+                            <div>
+                                <img src="resim/yemek3.jpg" alt="adana" width="150" height="200">
+                                    <h2>Adana Kebap</h2>
+                            </div>
+                        </div>
+
+                        <div class="menu_ic">
+                            <div>
+                                <img src="resim/yemek4.jpg" alt="kofte" width="150" height="200">
+                                    <h2>Kofte</h2>
+                            </div>
+                        </div>
+
+                        <div class="menu_ic">
+                            <div>
+                                <img src="resim/yemek9.jpg" alt="tavuk" width="150" height="200">
+                                    <h2>Tavuk Sis</h2>
+                            </div>
+                        </div>
+
+
+                        <div class="menu_ic">
+                            <div>
+                                <img src="resim/yemek5.jpeg" alt="kola" width="150" height="200">
+                                    <h2>Kola</h2>
+                            </div>
+                        </div>
+
+                        <div class="menu_ic">
+                            <div>
+                                <img src="resim/yemek6.jpg" alt="ayran" width="150" height="200">
+                                    <h2>Ayran</h2>
+                            </div>
+                        </div>
+
+                        <div class="menu_ic">
+                            <div>
+                                <img src="resim/yemek7.jpg" alt="salgam" width="150" height="200">
+                                    <h2>Salgam</h2>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <footer id="ftr">
+                    <h2>Bizi tercih ettiginiz icin tesekkürler!</h2>
+                    <h2>+905456826468</h2>
+                    <h2>"Buğrahan Karaca"</h2>
+
+                </footer>
+
+                </body>
+                </html>
